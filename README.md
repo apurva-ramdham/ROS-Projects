@@ -19,4 +19,17 @@ The goal of this assignment is to write a Kinematics script in a file called for
 
 Every time a new set of joint values are received, the node uses this information, along with the URDF, and computes the transform from the robot "root" (first link) to each link in the chain. All of these transforms are then published to TF.
 
+# Assignment 3
+In this project demonstartes a node capable of performing Cartesian Control and Numerical IK of kuka and ur5 robots.
+This project is an implementation of a complete algorithm for Cartesian end-effector translation control with a secondary objective.
+The file ccik.py contains primarily three functions get_cartesian_command, get_ik_command, get_jacobian.
+
+# Assignment 4
+Implementation of the RRT algorithm for sampling-based motion planning. The motion planning algorithm is used along with MoveIt! software framework to help with some needed auxiliary calls.
+The function motion_planning is a callback for the /motion_planning_goal topic of the data type "geometry_msgs/Transform". Each time the callback is invoked, the robot plans and executes an appropriate joint trajectory using an RRT planner.
+
+# Assignment 5
+The goal of this assignment is to implement an Extended Kalman Filter to estimate the state of a mobile robot; the state consists of the robot's 2D position and orientation. 
+In addition to publishing the commanded velocities, the robot can also localize itself with respect to a number of landmarks in the scene. Every time a landmark is within range of the robot's sensors, the robot will record its distance to the landmark, as well as the bearing of the landmark with respect to the robot's orientation.
+
 
