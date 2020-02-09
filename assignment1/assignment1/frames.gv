@@ -1,0 +1,9 @@
+digraph G {
+"robot_frame" -> "camera_frame"[label="Broadcaster: /solution\nAverage rate: 361.812 Hz\nMost recent transform: 1537929748.502 ( 0.000 sec old)\nBuffer length: 4.992 sec\n"];
+"base_frame" -> "robot_frame"[label="Broadcaster: /solution\nAverage rate: 361.697 Hz\nMost recent transform: 1537929748.502 ( 0.001 sec old)\nBuffer length: 4.990 sec\n"];
+"base_frame" -> "object_frame"[label="Broadcaster: /solution\nAverage rate: 362.101 Hz\nMost recent transform: 1537929748.495 ( 0.007 sec old)\nBuffer length: 4.985 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1537929748.502"[ shape=plaintext ] ;
+ }->"base_frame";
+}
