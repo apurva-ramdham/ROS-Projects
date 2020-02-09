@@ -14,4 +14,9 @@ The task was to fill in the code for a node called solution.py that published fo
 
 The objective of the project was to publish the correct transform, which would make the arrow point out of the cube directly at the cylinder and the tip of the arrow should be just barely touching the cylinder. 
 
+# Assignment 2
+The goal of this assignment is to write a Kinematics script in a file called forward_kinematics.py. The script must work for both kuka and ur5 robots.
+
+Every time a new set of joint values are received, the node uses this information, along with the URDF, and computes the transform from the robot "root" (first link) to each link in the chain. All of these transforms are then published to TF.
+
 
